@@ -1,5 +1,7 @@
 package com.zero.goods.service;
 
-public class GoodsService {
+import com.zero.base.service.BaseService;
+
+public class GoodsService extends BaseService{
 
 }
