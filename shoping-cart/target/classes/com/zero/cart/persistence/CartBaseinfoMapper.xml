@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ljz.cart.persistence.CartBaseinfoMapper" >
+  <resultMap id="BaseResultMap" type="com.ljz.cart.domain.CartBaseinfo" >
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <id column="UUID" property="uuid" jdbcType="VARCHAR" />
+    <result column="USER_ID" property="userId" jdbcType="VARCHAR" />
+    <result column="GOODS_ID" property="goodsId" jdbcType="VARCHAR" />
+    <result column="BUY_NUM" property="buyNum" jdbcType="INTEGER" />
+  </resultMap>
+</mapper>

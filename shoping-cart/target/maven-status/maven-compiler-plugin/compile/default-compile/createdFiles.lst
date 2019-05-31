@@ -1,0 +1,3 @@
+com\ljz\cart\domain\CartBaseinfo.class
+com\ljz\cart\persistence\CartBaseinfoMapper.class
+com\ljz\cart\service\CartBaseinfoService.class

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ljz.customer.persistence.SysUserInfoMapper" >
+  <resultMap id="BaseResultMap" type="com.ljz.customer.domain.SysUserInfo" >
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <result column="USER_ACCOUNT" property="userAccount" jdbcType="VARCHAR" />
+    <result column="USER_NAME" property="userName" jdbcType="VARCHAR" />
+    <result column="USER_NICK" property="userNick" jdbcType="VARCHAR" />
+    <result column="WECHAT" property="wechat" jdbcType="VARCHAR" />
+    <result column="TEL" property="tel" jdbcType="VARCHAR" />
+    <result column="EMAIL" property="email" jdbcType="VARCHAR" />
+    <result column="ADDRESS" property="address" jdbcType="VARCHAR" />
+    <result column="BIRTHDAY" property="birthday" jdbcType="DATE" />
+    <result column="IS_ACTIVE" property="isActive" jdbcType="CHAR" />
+    <result column="USER_TYPE" property="userType" jdbcType="CHAR" />
+  </resultMap>
+  
+  <select id="queryCustomerForList" resultMap="BaseResultMap">
+       select * from sys_user_info
+  </select>
+  
+</mapper>

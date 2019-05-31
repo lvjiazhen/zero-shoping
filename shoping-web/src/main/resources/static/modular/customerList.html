@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>customerList Pager</title>
+<script type="text/javascript" src="../../jquery.min.js"></script>
+<script type="text/javascript" src="../../jquery.easyui.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../../themes/default/easyui.css">
+<link rel="stylesheet" type="text/css" href="../../themes/icon.css">
+
+</head>
+<body>
+<div>
+ <table id ="dg" data-options="fitColumns:true,striped:true" style="width:500px;height:250px">
+    
+    
+</table>
+</div>
+<script type="text/javascript">
+function formatterPrice(value, row, index){
+	return value+"xx";
+}
+
+function onCheck(rowIndex,rowData){
+	alert(rowIndex+"xxx");
+}
+
+$('#dg').datagrid({
+    url:'customer_data.json',
+    method:'get',
+    columns:[[
+		{field:'code',title:'Code',width:100,align:'center'},
+		{field:'name',title:'Name',width:200,align:'center'},
+		{field:'price',title:'Price',width:100,align:'center',formatter:formatterPrice},
+		{field:'ck',title:'',width:100,align:'center',checkbox:true}
+    ]],
+    onCheck:function(index,field,value){
+		alert('chian');
+	}
+})
+
+
+</script>
+
+</body>
+</html>

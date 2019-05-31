@@ -1,0 +1,6 @@
+com\ljz\order\persistence\OrderSummaryMapper.class
+com\ljz\order\service\OrderDetailService.class
+com\ljz\order\domain\OrderDetail.class
+com\ljz\order\domain\OrderSummary.class
+com\ljz\order\persistence\OrderDetailMapper.class
+com\ljz\order\service\OrderSummaryService.class

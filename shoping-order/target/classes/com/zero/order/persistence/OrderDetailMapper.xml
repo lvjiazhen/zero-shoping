@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ljz.order.persistence.OrderDetailMapper" >
+  <resultMap id="BaseResultMap" type="com.ljz.order.domain.OrderDetail" >
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <id column="UUID" property="uuid" jdbcType="VARCHAR" />
+    <result column="ORDER_UUID" property="orderUuid" jdbcType="INTEGER" />
+    <result column="GOODS_UUID" property="goodsUuid" jdbcType="INTEGER" />
+    <result column="ORDER_NUM" property="orderNum" jdbcType="INTEGER" />
+    <result column="PRICE" property="price" jdbcType="REAL" />
+    <result column="TOTAL_MONEY" property="totalMoney" jdbcType="REAL" />
+    <result column="SAVE_MONEY" property="saveMoney" jdbcType="REAL" />
+  </resultMap>
+</mapper>

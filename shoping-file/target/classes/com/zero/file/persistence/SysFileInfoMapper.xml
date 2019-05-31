@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ljz.file.persistence.SysFileInfoMapper" >
+  <resultMap id="BaseResultMap" type="com.ljz.file.domain.SysFileInfo" >
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <id column="FILE_CD" property="fileCd" jdbcType="VARCHAR" />
+    <result column="FILE_TITL" property="fileTitl" jdbcType="VARCHAR" />
+    <result column="KEY_WORD" property="keyWord" jdbcType="VARCHAR" />
+    <result column="EST_ORG" property="estOrg" jdbcType="VARCHAR" />
+    <result column="ORG_CD" property="orgCd" jdbcType="CHAR" />
+    <result column="EST_PERS" property="estPers" jdbcType="VARCHAR" />
+    <result column="EST_DT" property="estDt" jdbcType="TIMESTAMP" />
+    <result column="PUB_ORG" property="pubOrg" jdbcType="VARCHAR" />
+    <result column="PUB_ORG_CD" property="pubOrgCd" jdbcType="VARCHAR" />
+    <result column="PUB_DT" property="pubDt" jdbcType="TIMESTAMP" />
+    <result column="ABS" property="abs" jdbcType="VARCHAR" />
+    <result column="MUL_TP" property="mulTp" jdbcType="CHAR" />
+    <result column="FILE_PATH" property="filePath" jdbcType="VARCHAR" />
+    <result column="FILE_NM" property="fileNm" jdbcType="VARCHAR" />
+    <result column="FILE_SIZE" property="fileSize" jdbcType="DECIMAL" />
+    <result column="FILE_EXT" property="fileExt" jdbcType="VARCHAR" />
+    <result column="IS_SEC" property="isSec" jdbcType="CHAR" />
+    <result column="SEC_G" property="secG" jdbcType="CHAR" />
+    <result column="DOC_TP" property="docTp" jdbcType="CHAR" />
+    <result column="MANG_CD" property="mangCd" jdbcType="CHAR" />
+    <result column="TS" property="ts" jdbcType="TIMESTAMP" />
+    <result column="NT" property="nt" jdbcType="VARCHAR" />
+  </resultMap>
+</mapper>

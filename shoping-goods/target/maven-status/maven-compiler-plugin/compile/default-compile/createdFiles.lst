@@ -1,0 +1,3 @@
+com\ljz\goods\domain\GoodsBaseinfo.class
+com\ljz\goods\persistence\GoodsBaseinfoMapper.class
+com\ljz\goods\service\GoodsService.class
