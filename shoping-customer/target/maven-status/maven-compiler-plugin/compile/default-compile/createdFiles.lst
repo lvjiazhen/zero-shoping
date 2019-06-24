@@ -1,9 +1,0 @@
-com\ljz\customer\domain\SysUsers.class
-com\ljz\customer\controller\CustomerController.class
-com\ljz\customer\shiro\ShopingRealm.class
-com\ljz\cart\domain\CartBaseinfo.class
-com\ljz\cart\persistence\CartBaseinfoMapper.class
-com\ljz\customer\persistence\SysUserInfoMapper.class
-com\ljz\customer\persistence\SysUsersMapper.class
-com\ljz\customer\service\CustomerService.class
-com\ljz\customer\domain\SysUserInfo.class

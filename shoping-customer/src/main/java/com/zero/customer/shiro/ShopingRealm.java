@@ -1,14 +1,11 @@
 package com.zero.customer.shiro;
 
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Set;
 
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.AuthenticationInfo;
 import org.apache.shiro.authc.AuthenticationToken;
 import org.apache.shiro.authc.SimpleAuthenticationInfo;
+import org.apache.shiro.authc.UsernamePasswordToken;
 import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.authz.SimpleAuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;
@@ -34,11 +31,18 @@ public class ShopingRealm extends AuthorizingRealm{
 
 	@Override
 	protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken token) throws AuthenticationException {
-		String principal = (String) token.getPrincipal();
-		principal = "xx" ;
+		UsernamePasswordToken upToken = (UsernamePasswordToken) token;		
 		SysUsers sysUser = new SysUsers();
-		SimpleAuthenticationInfo simpleAuthenticationInfo = new SimpleAuthenticationInfo(sysUser.getUserAccount(),sysUser.getPassword(),null);
-	    return simpleAuthenticationInfo;
+		
+		sysUser.setUserAccount(upToken.getUsername());
+		sysUser = (SysUsers) customerService.selectByPrimaryKey(sysUser);
+		if(sysUser==null){
+			return null ;
+		}
+
+		AuthenticationInfo authenticationInfo = new SimpleAuthenticationInfo(sysUser.getUserAccount(),sysUser.getPassword(),getName()); 
+
+	    return authenticationInfo;
 	}
 
 }

@@ -1,4 +1,4 @@
-package com.zero.base.shiro;
+package com.zero.customer.shiro;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -70,10 +70,10 @@ public class ShiroConfig {
      * @return
      */
     @Bean
-    public SystemRealm systemRealm(){
-      SystemRealm customRealm = new SystemRealm();
-      customRealm.setCredentialsMatcher(hashedCredentialsMatcher());
-      return customRealm;
+    public ShopingRealm shopingRealm(){
+      ShopingRealm shopingRealm = new ShopingRealm();
+      shopingRealm.setCredentialsMatcher(hashedCredentialsMatcher());
+      return shopingRealm;
     }
 
     /**
@@ -83,7 +83,7 @@ public class ShiroConfig {
     @Bean
     public DefaultWebSecurityManager getSecurityManager(){
         DefaultWebSecurityManager securityManager = new DefaultWebSecurityManager();
-        securityManager.setRealm(systemRealm());
+        securityManager.setRealm(shopingRealm());
         securityManager.setRememberMeManager(cookieRememberMeManager());
         return securityManager;
     }
@@ -106,14 +106,14 @@ public class ShiroConfig {
         Map<String,String> filterChainDefinitionMap = new LinkedHashMap<String,String>();
         // 配置不会被拦截的链接 顺序判断
         
-        filterChainDefinitionMap.put("/*", "authc");
-        filterChainDefinitionMap.put("/image/*", "anon");
-        filterChainDefinitionMap.put("/js/*", "anon");
-        filterChainDefinitionMap.put("/css/*", "anon");
-        filterChainDefinitionMap.put("/login.html", "anon");
+       // filterChainDefinitionMap.put("/*", "authc");
+      //  filterChainDefinitionMap.put("/image/*", "anon");
+      //  filterChainDefinitionMap.put("/js/*", "anon");
+      //  filterChainDefinitionMap.put("/css/*", "anon");
+      //  filterChainDefinitionMap.put("/login.html", "anon");
         // 如果不设置默认会自动寻找Web工程根目录下的"/login.jsp"页面
         filterFactoryBean.setLoginUrl("/login.html");      
-        filterFactoryBean.setSuccessUrl("/");
+   //     filterFactoryBean.setSuccessUrl("/index.h");
        
         
         filterFactoryBean.setFilterChainDefinitionMap(filterChainDefinitionMap);

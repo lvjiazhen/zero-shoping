@@ -2,6 +2,8 @@ package com.zero.base.jms.config;
 
 import javax.jms.ConnectionFactory;
 
+import lombok.Data;
+
 import org.apache.activemq.ActiveMQConnectionFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -46,4 +48,6 @@ public class JmsConfig {
 		jmsTemplate.setConnectionFactory(connectionFactory());
 		return jmsTemplate;
 	}
+	
+	
 }

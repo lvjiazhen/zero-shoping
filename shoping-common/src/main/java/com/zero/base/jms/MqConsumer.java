@@ -7,7 +7,7 @@ import javax.jms.TextMessage;
 import org.springframework.jms.annotation.JmsListener;
 import org.springframework.stereotype.Component;
 
-@Component("com.ljz.base.jms.MqConsumer")
+@Component("com.zero.base.jms.MqConsumer")
 public class MqConsumer {
 
 	@JmsListener(destination = JmsConstants.ORDER_DESTINATION_NAME1)

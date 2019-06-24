@@ -1,5 +1,8 @@
 package com.zero;
 
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.jms.annotation.EnableJms;
@@ -12,7 +15,9 @@ import com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure;
 @EnableRetry
 @EnableJms
 public class ShopingApplication {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws NoSuchAlgorithmException {
 		SpringApplication.run(ShopingApplication.class, args);
+		
+	
 	}
 }

@@ -1,6 +1,6 @@
-E:\workspace_study\shoping-parent\shoping-order\src\main\java\com\ljz\order\domain\OrderSummary.java
-E:\workspace_study\shoping-parent\shoping-order\src\main\java\com\ljz\order\service\OrderSummaryService.java
-E:\workspace_study\shoping-parent\shoping-order\src\main\java\com\ljz\order\domain\OrderDetail.java
-E:\workspace_study\shoping-parent\shoping-order\src\main\java\com\ljz\order\persistence\OrderDetailMapper.java
-E:\workspace_study\shoping-parent\shoping-order\src\main\java\com\ljz\order\persistence\OrderSummaryMapper.java
-E:\workspace_study\shoping-parent\shoping-order\src\main\java\com\ljz\order\service\OrderDetailService.java
+E:\workspace_study\zero-shoping\shoping-order\src\main\java\com\zero\order\persistence\OrderSummaryMapper.java
+E:\workspace_study\zero-shoping\shoping-order\src\main\java\com\zero\order\persistence\OrderDetailMapper.java
+E:\workspace_study\zero-shoping\shoping-order\src\main\java\com\zero\order\service\OrderDetailService.java
+E:\workspace_study\zero-shoping\shoping-order\src\main\java\com\zero\order\domain\OrderSummary.java
+E:\workspace_study\zero-shoping\shoping-order\src\main\java\com\zero\order\service\OrderSummaryService.java
+E:\workspace_study\zero-shoping\shoping-order\src\main\java\com\zero\order\domain\OrderDetail.java

@@ -80,6 +80,8 @@ public class BaseService<T> {
 		return mapper.delete(record);
 
 	}
+	
+	
 
 	public int deleteByPrimaryKey(T record) {
 		mapper = getMapperBean((Class<T>) record.getClass());

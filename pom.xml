@@ -45,7 +45,7 @@
 				<version>${aspectj.version}</version>
 			</dependency>
 
-			<!--alibaba -->
+			<!--alibaba相关 -->
 			<dependency>
 				<groupId>com.alibaba</groupId>
 				<artifactId>druid</artifactId>
@@ -101,7 +101,6 @@
 		</plugins>
 	</build>
 	<modules>
-
 		<module>shoping-web</module>
 		<module>shoping-cart</module>
 		<module>shoping-common</module>

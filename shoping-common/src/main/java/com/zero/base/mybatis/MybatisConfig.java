@@ -25,7 +25,7 @@ import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInterceptor;
 
 @Configuration
-@MapperScan(value = "com.ljz", properties = { "mappers=tk.mybatis.mapper.common.Mapper", "notEmpty=true" })
+@MapperScan(value = "com.zero", properties = { "mappers=tk.mybatis.mapper.common.Mapper", "notEmpty=true" })
 @PropertySource("classpath:application-test.properties")
 public class MybatisConfig {
 	Logger logger = LoggerFactory.getLogger(MybatisConfig.class);
